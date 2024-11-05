@@ -46,12 +46,12 @@ const Landing = () => {
       const result = await response.json();
 
       if (response.ok) {
-        navigate('/profile');
+      //  navigate('/profile');
       } else {
         setError(result.error || 'Login failed');
       }
     } catch (err) {
-      setError('An error occurred. Please try again.');
+      setError('An error occurred. Please try again.'+err);
     }
   };
 

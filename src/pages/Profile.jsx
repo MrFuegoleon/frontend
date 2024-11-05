@@ -48,6 +48,7 @@ function Profile() {
         setLoading(false);
       }
     };
+    authenticateUser();
     fetchIdeas();
     fetchTotalUsers();
     fetchDrafts();
