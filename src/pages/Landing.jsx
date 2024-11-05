@@ -8,6 +8,7 @@ const Landing = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
+  
   // Check if user is already logged in
   useEffect(() => {
     const checkAuth = async () => {
