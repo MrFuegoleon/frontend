@@ -1,0 +1,113 @@
+@import url('https:\/\/fonts.googleapis.com\/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+.dio-list {
+  width: 90%; 
+  margin: auto;
+  font-family: "Kumbh Sans";
+}
+
+.dio-item {
+  background-color: #ffffff;
+  padding: 5px; 
+  margin-bottom: 15px;
+  border-radius: 3vh; 
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-family: "Kumbh Sans";
+}
+
+.dio-text {
+  width: 50vw;
+  font-size: 1.5vw;
+  font-family: "Kumbh Sans";
+  font-weight: 500;
+  color: #020202;
+}
+
+.dio-text h3 {
+  font-weight: 500;
+  font-size: 2vw;
+  color: #020202;
+}
+
+.participate-button {
+  margin-left: 16%;
+  margin-bottom: 15%;
+  font-size: 80%;
+  width: 10vw;
+  background-color:  #71d0d9;
+  border-radius: 2vh;
+  border: 0.5vh solid transparent;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3vh;
+  color: rgb(0, 0, 0);
+}
+
+
+.photo_creator_do{
+  margin-bottom: 5vh;
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+  margin-left: 5vw;
+}
+.creator_do{
+  background-color: #305E7E;
+  border-radius: 12vh; 
+  margin-bottom: 3vh; 
+  padding: 1.5vh;
+  color: rgba(253, 252, 252, 0.87);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 80%;
+  display: flex;
+  margin-left: 5%;
+  width: 12vw;
+  white-space: nowrap;
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+}
+.type_do{
+  background-color: #305E7E;
+  border-radius: 2vh; 
+  margin-bottom: 1vh; 
+  padding: 1vh;
+  color: rgba(253, 252, 252, 0.87);
+  font-family: 'Kumbh Sans', sans-serif;
+  font-size: 80%;
+  display: flex;
+  margin-left: 5%;
+  width: 10vw;
+  height: 3vh;
+  white-space: nowrap;
+  align-items: center;
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer horizontalement */
+}
+.do_name{
+  border-radius: 2vh; 
+  border: 0.2vh solid #000000;
+  margin: 2vh;
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+}
+.do_description{
+  border-radius: 2vh; 
+  border: 0.2vh solid #000000;
+  margin: 2vh;
+  display: flex; /* Utiliser flexbox */
+  justify-content: center; /* Centrer horizontalement */
+  align-items: center;
+}
+
+.participate-button:hover {
+  background-color: gray;
+  cursor: pointer;
+}
+
+.dio-item h3 {
+  font-size: 2.5vw;
+}

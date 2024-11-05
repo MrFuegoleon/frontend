@@ -1,0 +1,219 @@
+
+.login-container {
+  border-radius: 2vh;
+  padding: 2vh;
+  box-shadow: 0vh 0vh 2vh rgba(0, 0, 0, 0.2);
+  font-family: Arial, sans-serif;
+  height: 92vh;
+  /* width: ; */
+  /* max-width: 600px; */
+  /* margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px; */
+  /* background-color: #f9f9f9; */
+  float: none;
+  flex-grow: 100;
+  display: 'flex';
+  flex-direction: 'column';
+}
+
+.forme{
+  height: 50vh;
+  margin-top: 10%;
+}
+
+.form-group {
+  margin: 1vh;
+}
+
+.form-group label {
+  display: block;
+  color: black;
+  font-size: 2vh;
+  margin-bottom: 0.5vh;
+  margin-right: 25%;
+  font-family: "Kumbh Sans";
+}
+
+.form-group input {
+  width: 30%;
+  padding: 2vh;
+  border: none;
+  border-radius: 3vh;
+  background: rgba(255, 255, 255, 0.8);
+  font-size: 2.6vh;
+  color: #333;
+  outline: none;
+  height: 4vh;
+}
+
+.p{
+  height: 10vh;
+}
+
+.form-group input[type="email"] {
+  /* Ajoutez des styles spécifiques pour le champ email */
+  position: absolute;
+  width: 20vw;
+  top: 46vh; left: 70vw;
+}
+
+.form-group input[type="password"] {
+  /* Ajoutez des styles spécifiques pour le champ mot de passe */
+  position: absolute;
+  width: 20vw;
+  top: 62vh; left: 70vw;
+}
+.MailAdress {
+  color: #ddd;
+  position: absolute;
+  top: 40vh; left: 70vw;
+}
+.Password {
+  color: #ddd;
+  position: absolute;
+  top: 56vh; left: 70vw;
+}
+
+.buttonLogin {
+  background: transparent;
+  color: rgb(255, 255, 255);
+  padding: 1vh 2vh;
+  border: none;
+  border-radius: 5vh;
+  cursor: pointer;
+  background-color: #85c2d3;
+  background: #6b47ff;
+  font-size: 3vh;
+  margin: -20vh;
+  position: absolute;
+  top: 100vh; left: 86.9vw;
+  font-weight: bold;
+}
+
+.buttonLogin:hover,
+.buttonLogin:active {
+  background-color: #85c2d3;
+  border-radius: 5vh;
+  background: #6b47ff;
+  font-size: 3vh;
+  color: black;
+  font-weight: bold;
+}
+
+.message {
+  color: #ff6b6b;
+  font-size: 2vh;
+  margin-top: 1.5vh;
+}
+
+.link {
+  color: #6b47ff;
+  text-decoration: none;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+.user-details {
+  font-family: Arial, sans-serif;
+  /* width: ; */
+  /* max-width: 600px; */
+  margin: 0 auto;
+  padding: 2vh;
+  border: 0.3vh solid #ccc;
+  border-radius: 0.7vh;
+  background-color: #f9f9f9;
+  float: none;
+  overflow: scroll;
+  overflow-x: hidden;
+  flex-grow: 100;
+}
+
+.user-details h2 {
+  font-size: 3.4vh;
+  margin-bottom: 3vh;
+}
+
+.user-details ol {
+  list-style: none;
+  padding: 0;
+}
+
+.user-details li {
+  margin-bottom: 2vh;
+  padding: 1.5vh;
+  background-color: #fff;
+  border: 0.2vh solid #ddd;
+  border-radius: 0.7vh;
+}
+
+.user-details li:hover {
+  background-color: #f0f0f0;
+  transition: background-color 0.3s;
+}
+.account .empower-text,
+.account .TheWork-text {
+  margin: 0vh; /* Ajoute une marge autour du texte */
+  color: rgb(247, 247, 247); /* Couleur du texte */
+  font-family: Arial, sans-serif; /* Police de caractères */
+  text-align: center; /* Aligner le texte à gauche */
+  justify-self: auto;
+}
+
+.account .empower-text {
+  font-size: 5.5vh; /* Taille de la police pour empower-text */
+  position: absolute;
+  top: 10vh; left: -4vw;
+  margin-top: 10px; /* Adjust this value as needed */
+  margin-left: 10vw;
+  font-weight: bold;
+}
+
+.account .TheWork-text {
+  font-size: 4.0vh; 
+  position: absolute;
+  top: 35vh; left: -4vw;
+  margin-top: 5px; /* Move it up by reducing the top margin */
+  margin-left: 10vw; /* Keep the left margin for alignment */
+  line-height: 1.4;
+  text-align: left; 
+}
+.Exclusively {
+  font-size: 4vh; 
+  color: aqua;
+  position: absolute;
+  top: 80vh; left: 25vw;
+  font-weight: bold;
+}
+.ByMKIF {
+  font-size: 3vh; 
+  color: rgb(255, 255, 255);
+  position: absolute;
+  top: 19.5vh; left: 46vw;
+}
+.AlreadyMember {
+  font-size: 4vh; 
+  color: aqua;
+  position: absolute;
+  top: 31.5vh; left: 70vw;
+}
+.logo_login {
+  font-size: 18vh; 
+  color: #91cad9;
+  position: absolute;
+  top: 6vh; left: 42vw;
+}
+.background-image {
+  background-image: url(../../images/Thankward-Homepage.jpg);
+  background-size: cover;
+  background-position: center 30px;
+  position: fixed;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

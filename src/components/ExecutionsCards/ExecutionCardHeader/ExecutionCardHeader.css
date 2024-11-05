@@ -1,0 +1,165 @@
+.header-card{
+    display: flex;
+    height: 18.5vh;
+}
+
+.header-card-left{
+    margin-right: 0%;
+    margin-left: 0%;
+    height: 24vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.first-row-card{
+    display: flex;
+    margin-left: -2vw;
+    justify-content: space-between; 
+}
+
+.creator-card{
+    background-color: #305E7E;
+    border-radius: 15px; 
+    margin-bottom: 1vh; 
+    padding: 10px;
+    color: rgba(240, 240, 240, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 80%;
+    display: flex;
+    margin-left: 5%;
+    width: 15vw;
+    white-space: nowrap;
+    align-items: center; 
+}
+.statut-card{
+    background-color: #51b4bd;
+    border-radius: 15px; 
+    margin-bottom: 1vh; 
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between; 
+    height: 3vh;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+}
+.count-down-card{
+    background-color: #51b4bd;
+    border-radius: 15px; 
+    margin-bottom: 1vh;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 80%;
+    display: flex;
+    justify-content: space-between; 
+    height: 3vh;
+    width: 10vw;
+    justify-content: center;
+    align-items: center;
+    margin-right:-1vw ;
+}
+
+.second-row-card{
+    background-color:  #474E5426; 
+    border-radius: 15px; 
+    margin-bottom: 1vh;
+    margin-top: 0vh; 
+    padding: 3%; 
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 90% ;
+    width: 40vw;
+    height: 7vh;
+    margin-left: 0%;
+    overflow: hidden;
+    margin-left: 0%;
+}
+
+
+.header-card-right{
+    margin-right: 0%;
+    margin-left: 8%;
+    height: 24vh;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.profile-card{
+    height: 7vh;
+    margin-bottom: 0.2vh;
+    margin-top: 0.2vh;
+    margin-left: 8vw;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.name-card{
+    font-size: 90%;
+    height: 2.8vh;
+    margin-right: 0%;
+    margin-top: 1vh;
+    width: 17vw;
+    justify-content: center;
+    display: flex;
+    background-color: #305E7E;
+    border-radius: 15px; 
+    margin-bottom: 1vh; 
+    padding: 10px;
+    color: rgba(255, 255, 255, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-left: 5%;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.thanks-score-card{
+    font-size: 90%;
+    height: 2.8vh;
+    margin-right: 0%;
+    margin-top: 1vh;
+    width: 17vw;
+    justify-content: center;
+    display: flex;
+    border-radius: 15px; 
+    margin-bottom: 2vh; 
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    margin-left: 5%;
+    white-space: nowrap;
+    align-items: center;
+}
+
+.thanks-score-card p{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+
+
+
+
+
+.exe-description{
+    height: 24vh;
+    margin-right: 1%;
+    margin-left: 3%;
+    width: 50vw;
+}
+
+
+
+.score{
+    height: 4vh;
+    margin-top: 0vh;
+    font-size: 90% ;
+}

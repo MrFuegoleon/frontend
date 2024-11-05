@@ -1,0 +1,139 @@
+/* Container holding both sections */
+.container {
+  display: flex;
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  overflow: hidden; /* Prevent content from overflowing */
+  position: fixed; /* Fixes the container to the viewport */
+  top: 0;
+  left: 0;
+}
+
+/* Left section (mint green) */
+.left-section {
+  background-color: #B3FFF4; /* Mint green background */
+  width: 50%; /* Half of the viewport's width */
+  height: 100vh; /* Full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Relative to the container */
+}
+
+/* Right section (light grey) */
+.right-section {
+  background-color: #F4F4F4; /* Light grey background */
+  width: 50%; /* Half of the viewport's width */
+  height: 100vh; /* Full height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative; /* Relative to the container */
+}
+
+/* Main heading styling */
+.main-heading {
+  width: 654px;
+  height: 156px;
+  position: relative; /* For top and left positioning */
+  top: -10px;
+  left: 40px;
+  opacity: 1; /* Set to 1 if you want it visible */
+
+  font-family: 'Silka Mono', monospace;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: left;
+
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  overflow: hidden; /* Prevent scrolling */
+}
+
+/* Wrapper for description and statement list */
+.description-list-wrapper {
+  width: 649px;
+  height: 360px;
+  position: relative; /* Allows 'top' and 'left' positioning */
+  top: 40px;
+  left: 40px;
+  opacity: 1; /* Set to 0 if you want it hidden initially */
+
+  font-family: 'Silka Mono', monospace;
+  font-size: 18px;
+  font-weight: 350;
+  line-height: 30px;
+  text-align: left;
+
+  color: black;
+
+  gap: 0px; /* Not necessary here since gap is mainly used with flex/grid, but included as requested */
+}
+
+.description {
+  margin-bottom: 20px; /* Add space between description and the list */
+}
+
+.statement-list {
+  list-style-type: decimal; /* Ensure it's an ordered list */
+  padding-left: 0px; /* Adjust padding for the list */
+}
+
+.statement-item {
+  margin-bottom: 10px; /* Space between each list item */
+}
+
+/* Styling for "Already member?" heading */
+.login-heading {
+  font-family: 'Silka Mono', monospace;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 52px;
+  text-align: left;
+  margin-bottom: 600px;
+  position: absolute;
+  bottom: 0; /* Align with bottom of "Experience playful" */
+  color: black;
+  width: 654px;
+  height: 156px;
+  top: 90px;
+  left: 125px !important;
+}
+
+/* Input fields styling */
+.input-field {
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 2px solid black; /* Black border */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 16px;
+  outline: none; /* Remove default outline */
+  background-color: #F0F0F0; /* Set a light grey background color */
+  color: black; /* Set input text color to black */
+}
+
+/* Styling for the "Welcome" button */
+.submit-button {
+  width: 150px;
+  padding: 10px;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 25px; /* Capsule shape */
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color: #333;
+}

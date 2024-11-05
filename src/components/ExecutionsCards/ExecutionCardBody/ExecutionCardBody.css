@@ -1,0 +1,133 @@
+.additional-first{
+    display: flex;
+    font-size: 90%;
+    margin-top: 5vh;
+}
+
+.comment-link{
+    display: flow;
+    font-size: 90%;
+    justify-content: space-between;
+    width: 100%;
+}
+
+
+.comments-card {
+    font-size: 80%;
+    background-color: #474E5426;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+    margin-top: 0vh;
+    padding: 1%;
+    color: rgb(0, 0, 0);
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 30vw;
+    margin-left: 0%;
+    align-items: center; 
+    margin-right: 0%;
+}
+
+.doc-card{
+    font-size: 80%;
+    background-color:  #474E5426;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+    padding: 2%; 
+    width: 8vw;
+    flex-direction: column;
+    margin-left: 0%;
+    margin-right: 5%;
+}
+
+.auto-eval-card {
+    font-size: 85%;
+    background-color: #474E5426;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 1%;
+    width: 16vw;
+    height: 10vh;
+    flex-direction: flex;
+}
+
+.com-rep {
+    display: flex;
+}
+
+.additional-second {
+    display: flex;
+}
+
+.ceo_comments-card {
+    font-size: 70%;
+    background-color: #474E5426;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+    margin-top: 0vh;
+    padding: 2%;
+    color: rgba(0, 0, 0, 0.87);
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 65%;
+    margin-left: 0%;
+}
+
+.ceo-eval-card {
+    font-size: 75%;
+    background-color: #474E5426;
+    border-radius: 10px;
+    margin-bottom: 1vh;
+    margin-left: 1%;
+    padding: 1%;
+    width: 35%;
+    flex-direction: flex;
+}
+
+.peer_review_comment-card {
+    flex-direction: column;
+    width: 63%;
+    padding: 0.5%;
+    margin-right: 1%;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+}
+
+.comments-peer-card {
+    font-size: 70%;
+    background-color: #474E5426;
+    border-radius: 15px;
+    margin-bottom: 2vh;
+    margin-top: 0vh;
+    padding: 2%;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 100%;
+    margin-left: 0%;
+}
+
+.peer_review_eva-card {
+    flex-direction: column;
+    width: 35%;
+    height: 100%;
+    margin-left: 1%;
+    margin-right: 1%;
+    padding: 0.5%;
+    border-radius: 15px;
+    margin-bottom: 1vh;
+}
+
+.eval-peer-card {
+    font-size: 75%;
+    background-color: #474E5426;
+    border-radius: 10px;
+    margin-bottom: 2vh;
+    margin-left: 1%;
+    padding: 2%;
+    width: 100%;
+    flex-direction: flex;
+}
+
+.peerExpectation-card {
+    flex-direction: column;
+}

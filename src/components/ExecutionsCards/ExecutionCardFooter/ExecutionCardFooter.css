@@ -1,0 +1,23 @@
+.plus-card{
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+}  
+
+.review-card{
+    margin-left: 73.5%;
+    font-size: 70%;
+    background-color:  #00000026; 
+    border-radius: 2vh;
+    border: 0.5vh solid transparent;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vh;
+    color: rgb(0, 0, 0);
+    padding: 2%;
+}
+.review-card:hover{
+    background-color:  transparent;
+    cursor: pointer;
+}
+

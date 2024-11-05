@@ -1,0 +1,67 @@
+.better{
+    margin-top: 10%;
+    font-size: 150%; 
+    font-weight: 500;   
+}
+
+h3{
+  font-size: 150%;  
+}
+
+
+.input-feed{
+    background-color: rgb(221, 216, 216);
+    color: black;
+    height: 10vh;
+    width: 30vw;
+    border-radius: 10px;
+    border: 200%;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 2%;
+}
+.feedback{
+    margin-top: 10%;
+    font-size: 100%;
+    border-radius: 2vh;
+    background-color:  white;
+    width: 25%;
+    height: 20%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-left: 0%;
+    border-radius: 20px;
+    font-family: "Kumbh Sans";
+    padding: 5%;
+    display: flex;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.feedback:hover{
+  background-color:  gray;
+  width: 10vw;
+  height: 3vh;
+}
+
+.input-feed {
+    border: none; 
+    color: black; 
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+
+  .input-feed::-webkit-input-placeholder {
+    color: black;
+  }
+  
+  .input-feed::-moz-placeholder {
+    color: black;
+  }
+  
+  .input-feed:-ms-input-placeholder {
+    color: black;
+  }

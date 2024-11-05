@@ -1,0 +1,134 @@
+.submition-pop-up-work {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50vw;
+  height: 35vh;
+  border-radius: 1vw;
+  padding: 4vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 2vw 0px rgba(0, 0, 0, 0.75);
+}
+
+.submition-pop-up-link {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  width: 50vw;
+  height: 35vh;
+  border-radius: 1vw;
+  padding: 4vw;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0px 0px 2vw 0px rgba(0, 0, 0, 0.75);
+}
+
+
+.evaluation-textarea {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5vw;
+  background-color: rgb(211, 208, 208);
+  border-radius: 2vw;
+  width: 27vw;
+  height: 10vh;
+  margin-top: 2vh;
+  margin: 0 auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: black;
+}
+
+.submition-pop-up-link input{
+  display: flex;
+  align-items: center;
+  padding: 0.8vw;
+  background-color: rgb(211, 208, 208);
+  border-radius: 0.1vw;
+  width: 40vw;
+  margin-top: 2vh;
+  margin: 0 auto;
+  font-family: 'Kumbh Sans', sans-serif;
+  color: black;
+  height: 0.5vh;
+  font-size: 80%;
+}
+
+.evaluation-textarea ::placeholder {
+  font-size: 3vw;
+}
+.submition-pop-up-link input::placeholder {
+  color: black; /* Change this to the color you want */
+  font-size: 1.9vh;
+}
+
+
+.submition-pop-up-work h2 {
+  background-color: transparent;
+  color: black;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-right: 3%;
+  font-size: 1.5vw;
+  font-weight: 200%;
+}
+.submition-pop-up-link h2 {
+  background-color: transparent;
+  color: black;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-right: 3%;
+  font-size: 1.5vw;
+  font-weight: 200%;
+}
+
+.submition-pop-up-link h3 {
+  background-color: transparent;
+  color: black;
+  font-family: 'Kumbh Sans', sans-serif;
+  margin-left: 0%;
+  font-size: 1vw;
+  font-weight: 100%;
+}
+
+
+.circle {
+  width: 4vw;
+  height: 3vh;
+  border-radius: 50%;
+  background-color: grey;
+  margin-left: 1vw;
+}
+
+.input-circle {
+  display: flex;
+}
+
+.spane {
+  margin-left: 0%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.span-text {
+  background-color: transparent;
+  border-radius: 20%;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.span-text:hover {
+  background-color: lightgray;
+}

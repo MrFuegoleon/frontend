@@ -1,0 +1,206 @@
+.profileContainer {
+  max-height: 100vh; /* Set maximum height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content exceeds height */
+  margin-bottom: 20px; /* Add a 20px margin at the bottom */
+  transition: all 0.3s ease; /* Apply a smooth transition for any property changes */
+  flex: 1; /* Allow the container to flex and fill available space */
+  padding: 20px; /* Add padding inside the container */
+}
+
+.filtered {
+  width: 50%; /* Set the width to 50% of its parent container */
+  float: left; /* Align the element to the left side */
+}
+
+.filterButton:hover {
+  background-color: #333; /* Change background color to darker shade on hover */
+}
+
+/* Grey background for the right side when filtered */
+.filtered::after {
+  content: ''; /* Insert an empty pseudo-element */
+  display: block; /* Make the pseudo-element behave like a block element */
+  width: 50%; /* Make it take up half the width of the container */
+  height: 100vh; /* Set height to 100% of the viewport height */
+  position: absolute; /* Position it relative to its nearest positioned ancestor */
+  top: 0; /* Align the top of the element with the top of its parent */
+  right: 0; /* Align the right edge of the element with the right of the parent */
+  z-index: -1; /* Send the element behind the main content */
+}
+
+.filterButton {
+  position: relative;         /* Position the button relative to its normal position */
+  top: 0%;                   /* Move the button 10% down from the top */
+  left: 50%;                  /* Move the button 50% from the left */
+  transform: translate(-50%, -50%); /* Center the button by adjusting its position */
+  display: block;             /* Make the button a block-level element */
+  padding: 10px 15px;         /* Add padding inside the button for spacing */
+  border: none;               /* Remove the default border */
+  background-color: black;    /* Set the background color to black */
+  color: white;               /* Set the text color to white */
+  cursor: pointer;            /* Change the cursor to pointer on hover */
+  border-radius: 20px;        /* Round the corners of the button */
+  font-size: 16px;            /* Set the font size for the button text */
+  z-index: 10;                /* Position the button above other elements */
+  width: 120px;               /* Set a fixed width for the button */
+  transition: all 0.3s ease;  /* Apply smooth transitions for property changes */
+  margin-top: 100px;          /* Add a margin of 100px from the top */
+}
+
+.filtered .filterButton {
+  top: 10%;                   /* Keep the button 10% down from the top */
+  left: 50%;                  /* Keep it horizontally centered on the left side */
+  transform: translate(-50%, -50%); /* Ensure the button stays centered */
+}
+
+.filtered .profileContainer {
+  max-height: 100vh; /* Limit the height to 100% of the viewport height */
+  overflow-y: auto; /* Enable vertical scrolling if content overflows */
+  margin: 0 auto; /* Horizontally center the profile container */
+  margin-bottom: 20px; /* Add 20px space at the bottom */
+  transition: all 0.3s ease; /* Smooth transition for changes */
+}
+
+.filtered .cardsWrapper {
+  display: flex;            /* Use flexbox to arrange child elements in a row */
+  flex-wrap: wrap;          /* Allow the cards to wrap onto a new line if necessary */
+  gap: 80px;                /* Set a gap of 80px between cards */
+  justify-content: center;  /* Center the cards horizontally */
+  margin: 0 auto;           /* Horizontally center the entire wrapper */
+  margin-top: 150px;        /* Add 150px space above the wrapper */
+  margin-bottom: 40px;      /* Add 40px space below the wrapper */
+}
+
+.profilePage {
+  display: flex; /* Use flexbox to align child elements in a row */
+}
+
+.ideaCreationForm {
+  flex: 1; /* Allow the form to flex and take up available space */
+  padding: 10px; /* Add padding inside the form */
+  background-color: #f5f5f5; /* Set a light grey background color */
+  border-left: 1px solid #ddd; /* Add a left border with light grey color */
+  font-family: 'Silka Mono', monospace;
+  justify-items: center;
+  align-items: center;
+}
+
+.feedbackFormWrapper {
+  flex: 1; /* Make both the idea form and feedback form take equal space */
+  background-color: #f5f5f5; /* Set the background color to light grey */
+  border-left: 1px solid #ddd; /* Add a light grey left border */
+}
+
+.userInfo {
+  position: relative;
+  top: -270px; /* Adjust as needed */
+  right: -20px; /* Adjust as needed */
+  font-size: 1.2em;
+  justify-content: right; /* Horizontal centering */
+  align-items:right; /* Vertical centering */
+  text-align: right; /* Center-align text */
+}
+
+.filtered .userInfo {
+  display: none;
+}
+
+.filtered .userInfo {
+  position: relative;
+  top: -350px; /* Adjust as needed */
+  right: -0px; /* Adjust as needed */
+  font-size: 1.2em;
+  justify-content: right; /* Horizontal centering */
+  align-items:right; /* Vertical centering */
+  text-align: right; /* Center-align text */
+}
+
+
+
+.filtered .avatar {
+  display: none;
+}
+
+.userName {
+  position: relative;
+  top: 10px; /* Adjust this value as needed */
+}
+
+.headerText {
+
+  justify-content: center; /* Horizontal centering */
+  align-items: center; /* Vertical centering */
+  text-align: center; /* Center-align text */
+  font-family: 'Silka Mono', monospace;
+  font-size: 43px;
+}
+/* Sidebar container */
+.sidebar {
+  position: fixed;
+  top: 45%;
+  right: 50px;
+  width: 60px;
+  background-color: #000;
+  border-radius: 32px;
+  padding: 25px 5px;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Silka Mono', monospace;
+  align-items: center;
+  color: #fff;
+}
+
+.filtered .bar {
+  display: none;
+}
+
+.vector {
+  width: 4%; 
+  position: relative; /* Add this if you need it positioned relative to the parent container */
+  top: 20px;
+  left: 40px;
+  right: 20px; /* Fixed typo here */
+}
+
+.filtered .vector {
+  width: 5%;
+}
+
+.userInfo {
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  position: relative;
+  top: -250px; /* Adjust as needed */
+  right: -0px; /* Adjust as needed */
+  font-size: 1.2em;
+  justify-content: right; /* Horizontal centering */
+  align-items:right; /* Vertical centering */
+  text-align: right; /* Center-align text */
+}
+
+
+
+/* Webkit (Chrome, Safari, newer versions of Opera) */
+.profileContainer::-webkit-scrollbar {
+  width: 6px; /* Thin vertical scrollbar */
+  background-color: transparent;
+}
+
+.profileContainer::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.profileContainer::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.3); /* Subtle black color */
+  border-radius: 3px; /* Rounded edges */
+}
+
+.profileContainer::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(0, 0, 0, 0.5); /* Slightly darker on hover */
+}
+
+/* Firefox */
+.profileContainer {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.3) transparent;
+}

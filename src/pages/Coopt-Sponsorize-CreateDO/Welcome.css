@@ -1,0 +1,97 @@
+.welcome-text{
+    color: #305E7E;
+    font-size: 4.7vh;
+    font-weight: 501;
+    margin-top: 10vh;
+}
+
+.date-input-container {
+    margin-bottom: 20px;
+  }
+  
+  .date-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+.create-my-profile{
+  width: 15vw;
+  height: 10vh;
+  padding: 1vh 1.5vw;
+  font-size: 1vw;
+  border: none;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 4vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans";
+  background-color: #71d0d9;
+  margin-left: 0vw;
+}
+
+.start-create-do{
+  width: 10vw;
+  font-size: 1.3vw;
+  border: none;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 3vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans";
+  margin-left: 1vw;
+  margin-top: 5vh;
+  background-color:#71d0d9
+}
+.delete-my-profile{
+  width: 15vw;
+  height: 10vh;
+  padding: 1vh 1.5vw;
+  font-size: 1vw;
+  border: none;
+  background-color: gray;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  border-radius: 4vw;
+  justify-content: center;
+  align-items: center;
+  font-family: "Kumbh Sans";
+  background-color: #d83f3f;
+  margin-left: 0vw;
+  margin-top: 5vh;
+}
+
+.actions_coopt input::-webkit-input-placeholder {
+  color: black;
+  font-size: 2.3vh;
+}
+
+.actions_coopt input::-webkit-input-placeholde {
+  color: black;
+  font-size: 2.3vh;
+}
+
+.actions_coopt input::-moz-placeholder {
+  color: black;
+}
+
+.actions_coopt input:-ms-input-placeholder {
+  color: black;
+}
+
+.actions_coopt input::placeholder {
+  color: black;
+  font-size: 2.3vh;
+}
+
+.explain-sponsorization{
+  background-color: white;
+  height: 35vh;
+  width: 62vw;
+  border-radius: 3vw;
+  margin-left: 7vw;
+}

@@ -1,0 +1,81 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+.feedbackForm {
+  background-color: transparent; /* Make the form background transparent */
+  padding: 0; /* Remove padding */
+  width: 100%;
+  max-width: 600px;
+  margin: 20px;
+  box-shadow: none; /* Remove the shadow */
+  border-radius: 0; /* Remove the rounded corners */
+  text-align: left;
+}
+
+.feedbackForm h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.feedbackSection {
+  margin-bottom: 30px;
+}
+
+.feedbackSection p {
+  font-size: 1rem;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.feedbackForm textarea {
+  width: 100%;
+  padding: 15px;
+  font-size: 1.1rem;
+  border: 2px solid #000;
+  border-radius: 8px;
+  resize: none;
+  min-height: 100px;
+  outline: none;
+  margin-bottom: 20px;
+}
+
+.feedbackSection label {
+  font-size: 1rem;
+  margin-right: 20px;
+}
+
+.feedbackSection input[type="radio"] {
+  margin-right: 5px;
+}
+
+.buttonGroup {
+  display: flex;
+  gap: 10px;
+}
+
+.feedbackForm button {
+  background-color: #000;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feedbackForm button:hover {
+  background-color: #0056b3;
+}
+
+.secondaryButton {
+  background-color: #6c757d;
+}
+
+.secondaryButton:hover {
+  background-color: #5a6268;
+}

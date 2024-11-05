@@ -1,0 +1,226 @@
+/* Page layout */
+.idea-form-page {
+  width: 100%;
+  min-height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f5f5f5;
+  transform: translateX(40px); /* Adjust the value as needed to shift right */
+}
+
+
+.form-container {
+  width: 100%;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 15px;
+  font-family: 'Silka Mono', monospace;
+  position: relative;
+}
+
+/* Back button */
+.back-button {
+  position:absolute;
+  top: 60px;
+  left: 50%;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #000;
+}
+
+.back-icon {
+  width: 40px;
+  height: 40px;
+}
+
+/* Avatar section */
+.avatar-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 15px;
+  margin-top: 8px;
+}
+
+/* Title styles */
+.idea-title {
+  font-size: 38px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+/* Card container */
+.card-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap; /* Enable wrapping for smaller screens */
+}
+.idea-details {
+  max-height: 70vh; /* Set maximum height to 100% of the viewport height */
+  overflow-y: scroll; /* Enable vertical scrolling if content exceeds height */
+  margin: 0 auto; /* Horizontally center the container */
+  margin-bottom: 20px; /* Add a 20px margin at the bottom */
+  transition: all 0.3s ease; /* Apply a smooth transition for any property changes */
+  flex: 1; /* Allow the container to flex and fill available space */
+  padding: 20px; /* Add padding inside the container */
+  background-color: #f5f5f5; /* Optional: background color */
+
+/* Hide scrollbar for Webkit browsers */
+-webkit-overflow-scrolling: touch;
+}
+
+.idea-details::-webkit-scrollbar {
+  display: none; /* Hides the scrollbar for Webkit browsers */
+}
+
+/* Hide scrollbar for Firefox */
+.idea-details {
+  scrollbar-width: none; /* Firefox */
+}
+
+/* Hide scrollbar for Internet Explorer and Edge */
+.idea-details {
+  -ms-overflow-style: none; /* IE and Edge */
+}
+/* Other styles remain unchanged */
+
+.black-card {
+  background-color: black;
+  margin-top: 40px; 
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 50px;
+}
+
+.lamp-icon {
+  color: white;
+  width: 30px;
+  height: 35px;
+}
+
+/* Button container and buttons */
+.button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+.textarea {
+  width: 90%;
+  background-color: #f5f5f5;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: none; /* No quotes around 'none' */
+  font-size: 20px;
+  font-family: inherit;
+}
+
+.share-button {
+  width: 32%;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border-radius: 25px;
+  border: none;
+  font-size: 13px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.heart-icon {
+  margin-left: 10px;
+  color: #ff69b4;
+}
+
+.loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+/* New wrapper for the cards */
+.cards-wrapper {
+  position: absolute;
+  top: 0rem; /* Adjust this value to match your desired top spacing */
+  right: 2rem; /* Adjust this value to match your desired right spacing */
+  z-index: 10;
+}
+
+.myfeed {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #000;
+  background-color: #f5f5f5;
+  margin-bottom: 10px;
+  margin-top: 190px;
+  border:none;
+  width: 30%;
+}
+
+.textarea2 {
+  width: 13%;
+  background-color: #f5f5f5;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 16px;
+  font-family: inherit;
+  text-align: center;
+}
+/* Additional button states */
+.vote-button.vote-yes:hover:not(:disabled):not([style*="background-color: rgb(76, 175, 80)"]) {
+  background-color: rgba(76, 175, 80, 0.1) !important;
+}
+
+.vote-button.vote-no:hover:not(:disabled):not([style*="background-color: rgb(244, 67, 54)"]) {
+  background-color: rgba(244, 67, 54, 0.1) !important;
+}
+
+
+.button_underlined {
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: bold;
+  border: none;
+  font:inherit;
+  color: #000;
+  margin-right:50px; 
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.button_underlined2 {
+  font-size: 13px;
+  text-decoration: underline;
+  font-weight: bold;
+  border: none;
+  font:inherit;
+  background-color: #f5f5f5;
+  color: #000;
+  margin-right:50px; 
+  margin-bottom: 10px;
+  cursor: pointer;
+  margin-top: 20px;
+}

@@ -1,0 +1,96 @@
+.better{
+    margin-top: 5vh;
+    font-size: 150%; 
+    font-weight: 500;  
+    margin-bottom: 5vh; 
+}
+
+h3{
+  font-size: 150%;  
+}
+
+
+.input-feed-rejected{
+    background-color: rgb(221, 216, 216);
+    color: black;
+    height: 7vh;
+    width: 50vw;
+    border-radius: 1vh;
+    border: 100%;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-top: 1vh;
+    margin-bottom: 3vh;
+    display: flex;
+    align-items: center;
+    padding: 0.8vw;
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 80%;
+}
+
+
+.feedback_rejected{
+    margin-top: 5vh;
+    font-size: 100%;
+    background-color:  rgba(61, 51, 51, 0.637);
+    width: 15vw;
+    height: 8%;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    margin-left: 0%;
+    border-radius: 20px;
+    font-family: "Kumbh Sans";
+    padding: 1%;
+    display: flex;
+    border: 1px solid transparent;
+    cursor: pointer;
+}
+.feedback_rejected :hover{
+  background-color:  gray;
+}
+
+.input-feed {
+  width: 40vw;
+    border: none;
+    color: black;
+    font-family: 'Kumbh Sans', sans-serif;
+  }
+
+  ::placeholder {
+    color: black;
+  }
+
+  .input-feed-rejected::-webkit-input-placeholder {
+    color: black;
+  }
+  
+  .input-feed-rejected::-moz-placeholder {
+    color: black;
+  }
+  
+  .input-feed-rejected:-ms-input-placeholder {
+    color: black;
+  }
+
+.propose{
+    margin-top: 5vh;
+    display: flex;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+.case{
+    width: 1vw;
+    height: 4vh;
+    margin-bottom: 0vh;
+    margin-top: 0vh;
+    margin-right: -5vw;
+}
+
+.propose label{
+    margin-bottom: 0vh;
+    width: 10vw;
+    margin-left: -10vw;
+    margin-right: 15vw;
+}

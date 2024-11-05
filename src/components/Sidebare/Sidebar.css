@@ -1,0 +1,307 @@
+@import url('https:\/\/fonts.googleapis.com\/css2?family=Kumbh+Sans:wght@300;400;700&display=swap');
+
+.sidebar {
+    background-color: rgb(0, 88, 139);
+    color: rgb(255, 255, 255);
+    width: 20vw;
+    height: 97vh;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+.image_bar {
+  position: relative;
+  justify-content: right;
+  width: 13vw;
+  height: 18vh;
+}
+
+.sidebar-section-image {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid transparent;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  height: 24vh;
+  flex-basis: 1;
+  background-color: #63798a;
+
+}
+
+.sidebar-section {
+    flex-grow: 1;
+    display: flex;
+    border-bottom: 1px solid transparent;
+    background-color: transparent; 
+    border: none; 
+    color: rgb(250, 250, 250); 
+    cursor: pointer; 
+    transition: background-color 0.3s;
+    font-family: 'Kumbh Sans', sans-serif;
+    width: 20vw;  
+    background-color: #63798a;
+    font-size: 1.5vw;
+    overflow: hidden;
+}
+.sidebar-section-DO{
+  flex-grow: 1;
+  display: flex;
+  border-bottom: 1px solid transparent;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  background-color: #63798a;
+  font-size: 1.22vw;
+  overflow: hidden;
+}
+
+
+.sidebar-section-sponsorize{
+  flex-grow: 1;
+  display: flex;
+  border-bottom: 1px solid transparent;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  background-color: #63798a;
+  font-size: 1.3vw;
+  overflow: hidden;
+}
+
+.sidebar-section-logo {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: 0px solid transparent;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(253, 253, 253); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  flex-basis: 1;
+  background-color: #63798a;
+  overflow: hidden;
+  flex-direction: column;
+}
+
+.sidebar-section > span {
+  border-bottom: none;
+  overflow: hidden;
+}
+.sidebar-section-DO > span {
+  border-bottom: none;
+  overflow: hidden;
+}
+
+.logo{
+  height: 100vh;
+  width: 80%;
+  color: rgb(255, 255, 255);
+}
+
+.sidebar-section-logo > span {
+  border-bottom: none;
+  overflow: hidden;
+  margin-bottom: -2vh;
+}
+
+.sidebar-section-link {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  height: 12vh;
+  flex-basis: 1;
+  background-color: #63798a;
+  overflow: hidden;
+
+  
+}
+
+.sidebar-section-link-home {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  border-bottom: none;
+  background-color: transparent; 
+  border: none; 
+  color: rgb(255, 255, 255); 
+  cursor: pointer; 
+  transition: background-color 0.3s;
+  font-family: 'Kumbh Sans', sans-serif;
+  width: 20vw;  
+  height: 20vh;
+  flex-basis: 1;
+  background-color: #63798a;
+  overflow: hidden;
+  font-size: 7vh;
+}
+
+.sidebar-section-link.active {
+  background-color: gray;
+  border: 1px solid white;
+}
+.sidebar-section.active {
+  background-color: gray;
+  border: 1px solid white;
+}
+.sidebar-section-DO.active {
+  background-color: gray;
+  border: 1px solid white;
+}
+.sidebar-section-sponsorize.active {
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.sidebar-section-link-home.active {
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.sidebar-section-link > span {
+  border-bottom: none;
+  font-size: 1.5vw;
+  margin-left: 1.5vw;
+}
+.sidebar-section-link-home > span {
+  border-bottom: none;
+  margin-left: 3vw;
+}
+.sidebar-section-link,
+.sidebar-section-link > * {
+  text-decoration: none;
+}
+
+.sidebar-section-link-home,
+.sidebar-section-link-home > * {
+  text-decoration: none;
+}
+
+.sidebar-section-logo,
+.sidebar-section-logo > * {
+  text-decoration: none;
+}
+
+.sidebar-section img{
+  margin-left: 2vw;
+}
+.sidebar-section text{
+  margin-left: 4vw;
+  border-bottom: none;
+}
+
+.sidebar-section:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid white;
+}
+.sidebar-section-DO:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.sidebar-section-sponsorize:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.soon{
+  color: red;
+  font-size: 2vh;
+  margin-right: 1vw;
+}
+.soon_diohome{
+  color: red;
+  font-size: 2vh;
+}
+
+
+.sidebar-section-logo:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.sidebar-section:last-child {
+    border-bottom: none;
+}
+
+.icon{
+  height: 5vh;
+  width: 3vw;
+  margin-left: 2vw;
+}
+
+.ceo{
+  height: 4vh;
+  width: 3vw;
+  margin-left: 1vw;
+}
+
+.sidebar-section-link text{
+  margin-left: 4vw;
+}
+
+.sidebar-section-link:hover {
+  color: white;
+  background-color: gray;
+  border: 1px solid white;
+}
+
+.sidebar-section-link:last-child {
+    border-bottom: none;
+}
+
+
+.sidebar-section:first-child {
+  height: 15vh;
+}
+
+.sidebar-section.espace {
+  flex-grow: 5;
+}
+
+.sidebar-section a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.sidebar-section a:visited {
+  color: inherit;
+}
+
+.sidebar-section a:hover {
+  color: inherit;
+}
+
+.sidebar-section a:active {
+  color: inherit;
+}

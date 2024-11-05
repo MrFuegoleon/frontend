@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7429f97d.css",
+    "main.js": "/static/js/main.79ce4935.js",
+    "static/media/thankward-logo.png": "/static/media/thankward-logo.680b041a4a5d66425db3.png",
+    "static/media/Thankward-Homepage.jpg": "/static/media/Thankward-Homepage.20211054adc2b155bb57.jpg",
+    "static/media/QR_code_community.png": "/static/media/QR_code_community.a09c2d836a4860ebfdb6.png",
+    "static/media/thankward-logo-removebg.png": "/static/media/thankward-logo-removebg.5a62ee2f634c9af97be5.png",
+    "static/media/hand-left.png": "/static/media/hand-left.32666649948c61a24ed4.png",
+    "static/media/hand-right.png": "/static/media/hand-right.37bed83897ada8e631b5.png",
+    "static/media/log-out.png": "/static/media/log-out.f290e57ed915d79cc380.png",
+    "index.html": "/index.html",
+    "main.7429f97d.css.map": "/static/css/main.7429f97d.css.map",
+    "main.79ce4935.js.map": "/static/js/main.79ce4935.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7429f97d.css",
+    "static/js/main.79ce4935.js"
+  ]
+}

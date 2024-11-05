@@ -1,0 +1,44 @@
+.viewFeedback {
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.viewFeedback h3 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  color: #333;
+}
+
+.feedback-list {
+  list-style-type: none;
+  padding-left: 0;
+  max-height: 600px; /* Fixed height for scrollable list */
+  overflow-y: auto; /* Enable vertical scroll if content overflows */
+}
+
+
+
+.feedback-text {
+  font-style: italic;
+  color: #555;
+}
+
+.feedback-vote {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-weight: bold;
+}
+
+.feedback-vote.yes {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.feedback-vote.no {
+  background-color: #f44336;
+  color: #fff;
+}
