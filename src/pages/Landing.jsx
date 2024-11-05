@@ -12,7 +12,7 @@ const Landing = () => {
   useEffect(() => {
     const checkAuth = async () => {
       try {
-        const response = await fetch('https://deploiement-backend-ifrc2hafp-emanbichs-projects.vercel.app//login/login', {
+        const response = await fetch('https://tkwbackendcdl.onrender.com/login/login', {
           method: 'GET',
           credentials: 'include',
         });
@@ -33,7 +33,7 @@ const Landing = () => {
     setError('');
 
     try {
-      const response = await fetch('https://deploiement-backend-ifrc2hafp-emanbichs-projects.vercel.app//login/login', {
+      const response = await fetch('https://tkwbackendcdl.onrender.com/login/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

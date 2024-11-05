@@ -15,7 +15,7 @@ import pieChartIcon from '../images/pieChartIcon.png';
 import plusIcon from '../images/plusIcon.png';
 import FixedSidebar from '../components/FixedSidebar';
 
-const API_BASE_URL = 'https://deploiement-backend-ifrc2hafp-emanbichs-projects.vercel.app/';
+const API_BASE_URL = 'https://tkwbackendcdl.onrender.com';
 
 function Profile() {
   const [isSplit, setIsSplit] = useState(false);

@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://deploiement-backend-ifrc2hafp-emanbichs-projects.vercel.app/";
+const API_BASE_URL = "https://tkwbackendcdl.onrender.com";
 
 export const fetchUserId = async () => {
   try {
@@ -16,17 +16,17 @@ export const fetchUserId = async () => {
     }
 
     const user = await response.json();
-    if (!user || !user.id || !user.type) {  // Ensure both id and type are present
-      throw new Error('User information incomplete');
+    if (!user || !user.id || !user.type) {
+      // Ensure both id and type are present
+      throw new Error("User information incomplete");
     }
-    
+
     return { id: user.id, type: user.type }; // Return both id and type
   } catch (error) {
     console.error("Error fetching user ID:", error);
     throw error;
   }
 };
-
 
 export const fetchIdeaDetails = async (ideaId) => {
   try {
