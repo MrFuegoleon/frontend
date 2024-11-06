@@ -1,8 +1,7 @@
 import React, { Component } from "react";
 import "./login.css";
 
-import Cookies from "js-cookie"; // Importez la bibliothèque js-cookie
-// import logo from "../../images/thankward-logo-removebg.png";
+import Cookies from "js-cookie"; // Importation de la bibliothèque js-cookie
 
 class LoginPage extends Component {
   constructor(props) {
@@ -10,6 +9,7 @@ class LoginPage extends Component {
     this.state = {
       email: "",
       password: "",
+      errorMessage: "",
     };
   }
 
@@ -25,7 +25,8 @@ class LoginPage extends Component {
     const { email, password } = this.state;
 
     // Envoyer les informations d'identification au backend
-    fetch(process.env.REACT_APP_BACKEND_URL + "/login/api/login", {
+    fetch(process.env.REACT_APP_BACKEND_URL + "/login" + "/login", {
+      // Assurez-vous que l'URL soit correcte
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -36,31 +37,37 @@ class LoginPage extends Component {
         if (response.status === 200) {
           // La connexion est réussie, rediriger l'utilisateur
           response.json().then((data) => {
+            // Stockage du token JWT dans un cookie sécurisé et des informations dans le localStorage
             localStorage.setItem("userId", data.userId);
             localStorage.setItem("userName", data.userName);
-            localStorage.setItem("firstName",data.firstName);
-            localStorage.setItem("email",data.email);
-            localStorage.setItem("do_ids",data.do_ids);
-            localStorage.setItem("sponsored",data.sponsored);
-            Cookies.set("token", data.token, { secure: true }); // Ajout du stockage du token dans un cookie sécurisé
+            localStorage.setItem("firstName", data.firstName);
+            localStorage.setItem("email", data.email);
+            localStorage.setItem("do_ids", data.do_ids);
+            localStorage.setItem("sponsored", data.sponsored);
+            Cookies.set("token", data.token, {
+              secure: true,
+              sameSite: "Strict",
+            }); // Stockage du token JWT dans un cookie sécurisé
+
+            // Redirection en fonction du premier login
             if (data.first_connection === 0) {
-              window.location.href = "/Homepage";
+              window.location.href = "/"; // Redirection vers la page d'accueil
             } else {
-              window.location.href = "/Welcome";
+              window.location.href = "/"; // Redirection vers la page de bienvenue
             }
-    
           });
-
-          console.log(localStorage.getItem("isCEO"));
-
-
         } else {
-          // Afficher un message d'erreur
-          alert("Identifiant ou mot de passe incorrect.");
+          // Afficher un message d'erreur en cas d'identifiants incorrects
+          this.setState({
+            errorMessage: "Identifiant ou mot de passe incorrect.",
+          });
         }
       })
       .catch((error) => {
         console.error("Erreur lors de la connexion :", error);
+        this.setState({
+          errorMessage: "Erreur de connexion, veuillez réessayer.",
+        });
       });
   };
 
@@ -69,17 +76,39 @@ class LoginPage extends Component {
       <div className="login-container">
         <div className="background-image"></div>
         <div className="account">
-          <p className="empower-text" style={{marginLeft:'10vw'}}>Get your team on the same boat, and<br/>they will be as motivated and engaged<br/>as you are</p>
-          <p className="TheWork-text"><span style={{ color: 'aqua' }}>Thankward</span> in three sentences<br/>1 - A universal and systemic wealth-creation model that<br/>simplifies the journey towards a succesful life for deserving<br/>individuals<br/>2 - Values of recognition and trust that enable free and fair<br/>progress toward prosperity<br/>3 - A cutting-edge intuitive tech platform that makes the<br/>process actionable, enjoyable and highly powerful</p>
-          {/*<p className="ByMKIF">By MKIF</p>*/} 
+          <p className="empower-text" style={{ marginLeft: "10vw" }}>
+            Get your team on the same boat, and
+            <br />
+            they will be as motivated and engaged
+            <br />
+            as you are
+          </p>
+          <p className="TheWork-text">
+            <span style={{ color: "aqua" }}>Thankward</span> in three sentences
+            <br />
+            1 - A universal and systemic wealth-creation model that
+            <br />
+            simplifies the journey towards a successful life for deserving
+            <br />
+            individuals
+            <br />
+            2 - Values of recognition and trust that enable free and fair
+            <br />
+            progress toward prosperity
+            <br />
+            3 - A cutting-edge intuitive tech platform that makes the
+            <br />
+            process actionable, enjoyable, and highly powerful
+          </p>
           <p className="Exclusively">Exclusively by cooptation</p>
-          <p className="AlreadyMember ">Already a Member?</p>
-
+          <p className="AlreadyMember">Already a Member?</p>
         </div>
 
-        <form className='forme'> 
+        <form className="forme">
           <div className="form-group">
-            <p className="MailAdress" style={{fontSize:'2.5vh' }}>Your Email</p>
+            <p className="MailAdress" style={{ fontSize: "2.5vh" }}>
+              Your Email
+            </p>
             <input
               type="email"
               value={this.state.email}
@@ -87,14 +116,28 @@ class LoginPage extends Component {
             />
           </div>
           <div className="form-group">
-            <p className="Password" style={{fontSize:'2.5vh' }}>Your Password</p>
+            <p className="Password" style={{ fontSize: "2.5vh" }}>
+              Your Password
+            </p>
             <input
               type="password"
               value={this.state.password}
               onChange={this.handlePasswordChange}
             />
           </div>
-          <button className="buttonLogin" type="button" onClick={this.handleLogin}>
+          {this.state.errorMessage && (
+            <p
+              className="error-message"
+              style={{ color: "red", fontSize: "1.8vh" }}
+            >
+              {this.state.errorMessage}
+            </p>
+          )}
+          <button
+            className="buttonLogin"
+            type="button"
+            onClick={this.handleLogin}
+          >
             Welcome ➡
           </button>
         </form>
