@@ -46,7 +46,7 @@ const Landing = () => {
       const result = await response.json();
 
       if (response.ok) {
-      //  navigate('/profile');
+      navigate('/profile');
       } else {
         setError(result.error || 'Login failed');
       }
