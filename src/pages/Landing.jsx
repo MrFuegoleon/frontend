@@ -8,27 +8,15 @@ const Landing = () => {
   const [error, setError] = useState('');
   const navigate = useNavigate();
 
-  /*
-  // Check if user is already logged in
+  // Vérifie si l'utilisateur est déjà connecté en vérifiant le token JWT
   useEffect(() => {
-    const checkAuth = async () => {
-      try {
-        const response = await fetch('https://tkwbackendcdl.onrender.com/login/login', {
-          method: 'GET',
-          credentials: 'include',
-        });
-        
-        if (response.ok) {
-          navigate('/profile');
-        }
-      } catch (error) {
-        console.error('Auth check failed:', error);
-      }
-    };
-    
-    checkAuth();
+    const token = localStorage.getItem('token');
+    if (token) {
+      // Si un token existe, redirige vers le profil
+      navigate('/profile');
+    }
   }, [navigate]);
-*/
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setError('');
@@ -39,19 +27,20 @@ const Landing = () => {
         headers: {
           'Content-Type': 'application/json',
         },
-        credentials: 'include',
-        body: JSON.stringify({ email, password }),
+        body: JSON.stringify({ email, password }), // Envoie les identifiants utilisateur
       });
 
       const result = await response.json();
-
+      
       if (response.ok) {
-      //  navigate('/profile');
+        // Sauvegarde le token JWT dans le localStorage et redirige l'utilisateur
+        localStorage.setItem('token', result.token);
+        navigate('/profile');
       } else {
-        setError(result.error || 'Login failed');
+        setError(result.error || 'Échec de la connexion');
       }
     } catch (err) {
-      setError('An error occurred. Please try again.'+err);
+      setError('Une erreur est survenue. Veuillez réessayer. ' + err.message);
     }
   };
 
@@ -100,7 +89,7 @@ const Landing = () => {
             <button type="submit" className="submit-button">Welcome</button>
           </form>
 
-          {/* Error message */}
+          {/* Message d'erreur */}
           {error && <p className="error-message">{error}</p>}
         </div>
       </div>

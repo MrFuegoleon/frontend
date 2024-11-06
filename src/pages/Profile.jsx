@@ -1,4 +1,4 @@
-import React, { useState, useEffect ,useCallback} from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import './Profile.css';
 import AllIdeas from '../components/AllIdeas';
 import IdeaForm from '../components/IdeaForm';
@@ -16,6 +16,9 @@ import plusIcon from '../images/plusIcon.png';
 import FixedSidebar from '../components/FixedSidebar';
 
 const API_BASE_URL = 'https://tkwbackendcdl.onrender.com';
+
+// Récupère le token JWT depuis localStorage
+const getAuthToken = () => localStorage.getItem('token');
 
 function Profile() {
   const [isSplit, setIsSplit] = useState(false);
@@ -43,6 +46,7 @@ function Profile() {
           fetchUserScore(user.id);
         }
       } catch (error) {
+        // Redirection si l'utilisateur n'est pas authentifié
         window.location.href = '/';
       } finally {
         setLoading(false);
@@ -58,8 +62,10 @@ function Profile() {
     try {
       const response = await fetch(`${API_BASE_URL}/users/members/${userId}/score`, {
         method: 'GET',
-        credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${getAuthToken()}` // En-tête Authorization avec le token
+        },
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
@@ -77,8 +83,10 @@ function Profile() {
     try {
       const response = await fetch(`${API_BASE_URL}/ideas/ideas`, {
         method: 'GET',
-        credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${getAuthToken()}`
+        },
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
@@ -97,8 +105,10 @@ function Profile() {
     try {
       const response = await fetch(`${API_BASE_URL}/users/members`, {
         method: 'GET',
-        credentials: 'include',
-        headers: { 'Content-Type': 'application/json' },
+        headers: { 
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${getAuthToken()}`
+        },
       });
       if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
       const data = await response.json();
@@ -119,7 +129,7 @@ function Profile() {
 
   const handleNewIdea = () => {
     setShowIdeaForm(!showIdeaForm);
-    setShowProjects(false); // Hide projects when showing the idea form
+    setShowProjects(false);
     setShowIdeaPreview(false);
     setShowFeedbackForm(false);
     setShowViewFeedback(false);
@@ -149,7 +159,7 @@ function Profile() {
     setSelectedIdea(idea);
     setShowFeedbackForm(!showFeedbackForm);
     setShowIdeaForm(false);
-    setShowIdeaPreview(false); // Ensure Idea Preview is hidden
+    setShowIdeaPreview(false);
     setShowViewFeedback(false);
     setIsSplit(!isSplit);
   };
@@ -164,8 +174,8 @@ function Profile() {
     setIsSplit(true);
     setShowProjects(false);
   }, []);
-   // Ajout d'un effet pour gérer la synchronisation
-   useEffect(() => {
+
+  useEffect(() => {
     if (selectedIdea?.is_draft && !showIdeaForm) {
       setShowIdeaForm(true);
       setIsSplit(true);
@@ -177,16 +187,14 @@ function Profile() {
     setSelectedIdea(idea);
     setShowViewFeedback(!showViewFeedback);
     setShowIdeaForm(false);
-    setShowIdeaPreview(false); // Ensure Idea Preview is hidden
-    setShowFeedbackForm(false); // Ensure Feedback Form is hidden
+    setShowIdeaPreview(false);
+    setShowFeedbackForm(false);
     setIsSplit(!isSplit);
   };
-  
 
   const handleToggleProjects = () => {
     setShowProjects(!showProjects);
     setShowIdeaForm(false);
-    setShowIdeaForm(false); // Hide idea form when showing projects
     setShowIdeaPreview(false);
     setShowFeedbackForm(false);
     setShowViewFeedback(false);
@@ -195,10 +203,9 @@ function Profile() {
 
   return (
     <div className={`profilePage ${isSplit ? 'split' : ''}`}>
-      {/* Sidebar */}
       <div className={`profileContainer ${isSplit ? 'filtered' : ''}`}>
         <div>
-          <img src={vector} alt="vector" className="vector" onClick={() => window.location.href = 'http://localhost:3000/profile'}/>
+          <img src={vector} alt="vector" className="vector" onClick={() => window.location.href = '/profile'}/>
         </div>
         <h1 className='headerText'>
           Hello {loggedInUser ? loggedInUser.nom : 'Loading...'} <br />
@@ -265,7 +272,7 @@ function Profile() {
 
       {showFeedbackForm && selectedIdea && (
         <div className="feedbackFormWrapper">
-          <FeedbackForm idea={selectedIdea} handleSubmitFeedback={handleSubmitFeedback} />
+          <FeedbackForm idea={selectedIdea} />
         </div>
       )}
 
